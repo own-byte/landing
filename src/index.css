@@ -1,1 +1,39 @@
 @import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-bg: #0D0C14;
+    --color-card: #161625;
+    --color-text: #EDEDED;
+    --color-muted: #A1A1AA;
+    --color-accent: #7C7CFF;
+}
+
+@layer utilities {
+    .bg-background {
+        background-color: var(--color-bg);
+    }
+
+    .bg-card {
+        background-color: var(--color-card);
+    }
+
+    .text-text {
+        color: var(--color-text);
+    }
+
+    .text-muted {
+        color: var(--color-muted);
+    }
+
+    .text-accent {
+        color: var(--color-accent);
+    }
+}
+
+body {
+    @apply bg-[var(--color-bg)];
+}

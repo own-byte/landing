@@ -1,9 +1,19 @@
+import Header from "./components/Header";
+import About from "./components/About";
+import Footer from "./components/Footer";
+import AboutTeam from "./components/AboutTeam";
+import Advantages from "./components/Advantages";
+
 function App() {
 
   return (
-    <div>
-      <h1 className="text-purple-700">Own Byte Landing</h1>
-    </div>
+      <>
+        <Header />
+        <About />
+        <Advantages />
+        <AboutTeam />
+        <Footer />
+      </>
   )
 }
 
